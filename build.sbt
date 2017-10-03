@@ -6,7 +6,7 @@ import ScoverageSbtPlugin._
 version := "1.0"
 
 // 必要に応じて名前を変更しよう
-name := "microservice-base-scala"
+name := "samoyed"
 
 scalaVersion := "2.11.8"
 
@@ -125,7 +125,7 @@ lazy val coreDeps = Seq(
     "com.typesafe.play"                %% "play-jdbc"       % playVersion,
     "com.typesafe.play"                %% "play-cache"      % playVersion,
     "com.typesafe.play"                %% "play-ws"         % playVersion,
-    "com.typesafe.play"                %% "filters-helpers" % playVersion
+    "com.typesafe.play"                %% "filters-helpers" % playVersion,
   )
 ).flatten
 

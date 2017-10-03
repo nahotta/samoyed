@@ -5,7 +5,7 @@
 --   primary key(id)
 -- );
 
-create table event (
+create table sample (
    id bigint NOT NULL AUTO_INCREMENT,
    name varchar(255) NOT NULL,
    content text,

@@ -1,4 +1,2 @@
-# TUTORIAL: ここでコントローラの定義をします
-# ※ 定義するコントローラのクラスはclassでないといけません(2.4以降はobjectで定義されたコントローラはサポートされていません）
-GET         /          com.example.eventapi.application.controller.EventSearchController.index
-GET         /search/:eventId     com.example.eventapi.application.controller.EventSearchController.search(eventId: Long)
+GET         /              com.samoyed.infrastructure.play.controller.SampleController.index
+GET         /assets/*file  controllers.Assets.versioned(path="/public", file: Asset)
