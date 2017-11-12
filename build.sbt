@@ -106,10 +106,9 @@ lazy val coreDeps = Seq(
 
   // Tests
   Seq(
-    "org.specs2"                     % "specs2-core_2.11"       % spec2Version,
-    "org.specs2"                     % "specs2-mock_2.11"       % spec2Version,
-    "org.specs2"                     % "specs2-scalacheck_2.11" % spec2Version,
-    "org.scalacheck"                 % "scalacheck_2.11"        % "1.13.2"
+    "org.scalatest"                  % "scalatest_2.11"               % "3.0.0",
+    "org.scalacheck"                 % "scalacheck_2.11"              % "1.13.2",
+    "org.scalamock"                  %% "scalamock-scalatest-support" % "3.5.0"
   ),
 
   // Utils
@@ -125,7 +124,7 @@ lazy val coreDeps = Seq(
     "com.typesafe.play"                %% "play-jdbc"       % playVersion,
     "com.typesafe.play"                %% "play-cache"      % playVersion,
     "com.typesafe.play"                %% "play-ws"         % playVersion,
-    "com.typesafe.play"                %% "filters-helpers" % playVersion,
+    "com.typesafe.play"                %% "filters-helpers" % playVersion
   )
 ).flatten
 
